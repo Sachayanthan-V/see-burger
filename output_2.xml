@@ -1,0 +1,236 @@
+<?xml version='1.0' encoding='utf-8'?>
+<CUST_ORDER>
+        <PURPOSE_CODE>05</PURPOSE_CODE>
+        <SCHD_QLF>BB</SCHD_QLF>
+        <CUST_DEST>G9W1A</CUST_DEST>
+        <SITE_NBR>0786</SITE_NBR>
+        <LIN_JOB_SEQ>1519761</LIN_JOB_SEQ>
+        <LIN_VIN>1FA6P8CF0R5427074</LIN_VIN>
+        <BFR_RELEASE_NBR>241420009</BFR_RELEASE_NBR>
+        <DTM_TS>20240531</DTM_TS>
+        <UNT_MEASURE>PC</UNT_MEASURE>
+        <PARTS>
+            <PART>
+                <LIN_CUST_ITEM>DU5A 96631B84 A1D</LIN_CUST_ITEM>
+                <LIN_QTY>001</LIN_QTY>
+                <REF_CUST_ITEM_FRM>DU5A 96631B84 A1D</REF_CUST_ITEM_FRM>
+                <REF_LINE_FEED>1234</REF_LINE_FEED>
+            </PART>
+            <PART>
+                <LIN_CUST_ITEM>DU5A 96631B85 A1D</LIN_CUST_ITEM>
+                <LIN_QTY>001</LIN_QTY>
+                <REF_CUST_ITEM_FRM>DU5A 96631B85 A1D</REF_CUST_ITEM_FRM>
+                <REF_LINE_FEED>1234</REF_LINE_FEED>
+            </PART>
+            <PART>
+                <LIN_CUST_ITEM>JJ5T 14B416 A1A</LIN_CUST_ITEM>
+                <LIN_QTY>001</LIN_QTY>
+                <REF_CUST_ITEM_FRM>JJ5T 14B416 A1A</REF_CUST_ITEM_FRM>
+                <REF_LINE_FEED>1234</REF_LINE_FEED>
+            </PART>
+            <PART>
+                <LIN_CUST_ITEM>JJ5T 14B416 B1B</LIN_CUST_ITEM>
+                <LIN_QTY>001</LIN_QTY>
+                <REF_CUST_ITEM_FRM>JJ5T 14B416 B1B</REF_CUST_ITEM_FRM>
+                <REF_LINE_FEED>1234</REF_LINE_FEED>
+            </PART>
+            <PART>
+                <LIN_CUST_ITEM>JU5A 96610D78 DC3JA6</LIN_CUST_ITEM>
+                <LIN_QTY>002</LIN_QTY>
+                <REF_CUST_ITEM_FRM>JU5A 96610D78 DC3JA6</REF_CUST_ITEM_FRM>
+                <REF_LINE_FEED>1234</REF_LINE_FEED>
+            </PART>
+            <PART>
+                <LIN_CUST_ITEM>JU5A 96610E40 AE3JA6</LIN_CUST_ITEM>
+                <LIN_QTY>002</LIN_QTY>
+                <REF_CUST_ITEM_FRM>JU5A 96610E40 AE3JA6</REF_CUST_ITEM_FRM>
+                <REF_LINE_FEED>1234</REF_LINE_FEED>
+            </PART>
+            <PART>
+                <LIN_CUST_ITEM>PR3A S61701 AC</LIN_CUST_ITEM>
+                <LIN_QTY>001</LIN_QTY>
+                <REF_CUST_ITEM_FRM>PR3A S61701 AC</REF_CUST_ITEM_FRM>
+                <REF_LINE_FEED>1234</REF_LINE_FEED>
+            </PART>
+            <PART>
+                <LIN_CUST_ITEM>PR3A S61704 AB</LIN_CUST_ITEM>
+                <LIN_QTY>001</LIN_QTY>
+                <REF_CUST_ITEM_FRM>PR3A S61704 AB</REF_CUST_ITEM_FRM>
+                <REF_LINE_FEED>1234</REF_LINE_FEED>
+            </PART>
+            <PART>
+                <LIN_CUST_ITEM>PR3B 14B422 AD</LIN_CUST_ITEM>
+                <LIN_QTY>001</LIN_QTY>
+                <REF_CUST_ITEM_FRM>PR3B 14B422 AD</REF_CUST_ITEM_FRM>
+                <REF_LINE_FEED>1234</REF_LINE_FEED>
+            </PART>
+            <PART>
+                <LIN_CUST_ITEM>PR3B 14D696 AB</LIN_CUST_ITEM>
+                <LIN_QTY>002</LIN_QTY>
+                <REF_CUST_ITEM_FRM>PR3B 14D696 AB</REF_CUST_ITEM_FRM>
+                <REF_LINE_FEED>1234</REF_LINE_FEED>
+            </PART>
+            <PART>
+                <LIN_CUST_ITEM>PR3B 14D698 AB</LIN_CUST_ITEM>
+                <LIN_QTY>002</LIN_QTY>
+                <REF_CUST_ITEM_FRM>PR3B 14D698 AB</REF_CUST_ITEM_FRM>
+                <REF_LINE_FEED>1234</REF_LINE_FEED>
+            </PART>
+            <PART>
+                <LIN_CUST_ITEM>PR3B C50101 BE319W</LIN_CUST_ITEM>
+                <LIN_QTY>002</LIN_QTY>
+                <REF_CUST_ITEM_FRM>PR3B C50101 BE319W</REF_CUST_ITEM_FRM>
+                <REF_LINE_FEED>1234</REF_LINE_FEED>
+            </PART>
+            <PART>
+                <LIN_CUST_ITEM>PR3B C600E50 AD</LIN_CUST_ITEM>
+                <LIN_QTY>001</LIN_QTY>
+                <REF_CUST_ITEM_FRM>PR3B C600E50 AD</REF_CUST_ITEM_FRM>
+                <REF_LINE_FEED>1234</REF_LINE_FEED>
+            </PART>
+            <PART>
+                <LIN_CUST_ITEM>PR3B C600E51 BD</LIN_CUST_ITEM>
+                <LIN_QTY>001</LIN_QTY>
+                <REF_CUST_ITEM_FRM>PR3B C600E51 BD</REF_CUST_ITEM_FRM>
+                <REF_LINE_FEED>1234</REF_LINE_FEED>
+            </PART>
+            <PART>
+                <LIN_CUST_ITEM>PR3B C60255 EA319W</LIN_CUST_ITEM>
+                <LIN_QTY>002</LIN_QTY>
+                <REF_CUST_ITEM_FRM>PR3B C60255 EA319W</REF_CUST_ITEM_FRM>
+                <REF_LINE_FEED>1234</REF_LINE_FEED>
+            </PART>
+            <PART>
+                <LIN_CUST_ITEM>PR3B C611D10 EB</LIN_CUST_ITEM>
+                <LIN_QTY>001</LIN_QTY>
+                <REF_CUST_ITEM_FRM>PR3B C611D10 EB</REF_CUST_ITEM_FRM>
+                <REF_LINE_FEED>1234</REF_LINE_FEED>
+            </PART>
+            <PART>
+                <LIN_CUST_ITEM>PR3B C611D11 EB</LIN_CUST_ITEM>
+                <LIN_QTY>001</LIN_QTY>
+                <REF_CUST_ITEM_FRM>PR3B C611D11 EB</REF_CUST_ITEM_FRM>
+                <REF_LINE_FEED>1234</REF_LINE_FEED>
+            </PART>
+            <PART>
+                <LIN_CUST_ITEM>PR3B C61202 NA3GAX</LIN_CUST_ITEM>
+                <LIN_QTY>001</LIN_QTY>
+                <REF_CUST_ITEM_FRM>PR3B C61202 NA3GAX</REF_CUST_ITEM_FRM>
+                <REF_LINE_FEED>1234</REF_LINE_FEED>
+            </PART>
+            <PART>
+                <LIN_CUST_ITEM>PR3B C61203 NA3GAX</LIN_CUST_ITEM>
+                <LIN_QTY>001</LIN_QTY>
+                <REF_CUST_ITEM_FRM>PR3B C61203 NA3GAX</REF_CUST_ITEM_FRM>
+                <REF_LINE_FEED>1234</REF_LINE_FEED>
+            </PART>
+            <PART>
+                <LIN_CUST_ITEM>PR3B C62900 JF319W</LIN_CUST_ITEM>
+                <LIN_QTY>001</LIN_QTY>
+                <REF_CUST_ITEM_FRM>PR3B C62900 JF319W</REF_CUST_ITEM_FRM>
+                <REF_LINE_FEED>1234</REF_LINE_FEED>
+            </PART>
+            <PART>
+                <LIN_CUST_ITEM>PR3B C62901 JF319W</LIN_CUST_ITEM>
+                <LIN_QTY>001</LIN_QTY>
+                <REF_CUST_ITEM_FRM>PR3B C62901 JF319W</REF_CUST_ITEM_FRM>
+                <REF_LINE_FEED>1234</REF_LINE_FEED>
+            </PART>
+            <PART>
+                <LIN_CUST_ITEM>PR3B C632A22 AE</LIN_CUST_ITEM>
+                <LIN_QTY>001</LIN_QTY>
+                <REF_CUST_ITEM_FRM>PR3B C632A22 AE</REF_CUST_ITEM_FRM>
+                <REF_LINE_FEED>1234</REF_LINE_FEED>
+            </PART>
+            <PART>
+                <LIN_CUST_ITEM>PR3B C632A23 AD</LIN_CUST_ITEM>
+                <LIN_QTY>001</LIN_QTY>
+                <REF_CUST_ITEM_FRM>PR3B C632A23 AD</REF_CUST_ITEM_FRM>
+                <REF_LINE_FEED>1234</REF_LINE_FEED>
+            </PART>
+            <PART>
+                <LIN_CUST_ITEM>PR3B C63804 DG319W</LIN_CUST_ITEM>
+                <LIN_QTY>001</LIN_QTY>
+                <REF_CUST_ITEM_FRM>PR3B C63804 DG319W</REF_CUST_ITEM_FRM>
+                <REF_LINE_FEED>1234</REF_LINE_FEED>
+            </PART>
+            <PART>
+                <LIN_CUST_ITEM>PR3B C64416 JE319W</LIN_CUST_ITEM>
+                <LIN_QTY>001</LIN_QTY>
+                <REF_CUST_ITEM_FRM>PR3B C64416 JE319W</REF_CUST_ITEM_FRM>
+                <REF_LINE_FEED>1234</REF_LINE_FEED>
+            </PART>
+            <PART>
+                <LIN_CUST_ITEM>PR3B C64417 JE319W</LIN_CUST_ITEM>
+                <LIN_QTY>001</LIN_QTY>
+                <REF_CUST_ITEM_FRM>PR3B C64417 JE319W</REF_CUST_ITEM_FRM>
+                <REF_LINE_FEED>1234</REF_LINE_FEED>
+            </PART>
+            <PART>
+                <LIN_CUST_ITEM>PR3B C64810 AD</LIN_CUST_ITEM>
+                <LIN_QTY>001</LIN_QTY>
+                <REF_CUST_ITEM_FRM>PR3B C64810 AD</REF_CUST_ITEM_FRM>
+                <REF_LINE_FEED>1234</REF_LINE_FEED>
+            </PART>
+            <PART>
+                <LIN_CUST_ITEM>PR3B C64811 AD</LIN_CUST_ITEM>
+                <LIN_QTY>001</LIN_QTY>
+                <REF_CUST_ITEM_FRM>PR3B C64811 AD</REF_CUST_ITEM_FRM>
+                <REF_LINE_FEED>1234</REF_LINE_FEED>
+            </PART>
+            <PART>
+                <LIN_CUST_ITEM>PR3B C66600 DD319W</LIN_CUST_ITEM>
+                <LIN_QTY>001</LIN_QTY>
+                <REF_CUST_ITEM_FRM>PR3B C66600 DD319W</REF_CUST_ITEM_FRM>
+                <REF_LINE_FEED>1234</REF_LINE_FEED>
+            </PART>
+            <PART>
+                <LIN_CUST_ITEM>PR3B C66601 DD319W</LIN_CUST_ITEM>
+                <LIN_QTY>001</LIN_QTY>
+                <REF_CUST_ITEM_FRM>PR3B C66601 DD319W</REF_CUST_ITEM_FRM>
+                <REF_LINE_FEED>1234</REF_LINE_FEED>
+            </PART>
+            <PART>
+                <LIN_CUST_ITEM>PR3B COSTFRL CA</LIN_CUST_ITEM>
+                <LIN_QTY>001</LIN_QTY>
+                <REF_CUST_ITEM_FRM>PR3B COSTFRL CA</REF_CUST_ITEM_FRM>
+                <REF_LINE_FEED>1234</REF_LINE_FEED>
+            </PART>
+            <PART>
+                <LIN_CUST_ITEM>PR3B COSTFRR BA</LIN_CUST_ITEM>
+                <LIN_QTY>001</LIN_QTY>
+                <REF_CUST_ITEM_FRM>PR3B COSTFRR BA</REF_CUST_ITEM_FRM>
+                <REF_LINE_FEED>1234</REF_LINE_FEED>
+            </PART>
+            <PART>
+                <LIN_CUST_ITEM>PR3B COSTRRB TA</LIN_CUST_ITEM>
+                <LIN_QTY>001</LIN_QTY>
+                <REF_CUST_ITEM_FRM>PR3B COSTRRB TA</REF_CUST_ITEM_FRM>
+                <REF_LINE_FEED>1234</REF_LINE_FEED>
+            </PART>
+            <PART>
+                <LIN_CUST_ITEM>PU5A 622A02 AA</LIN_CUST_ITEM>
+                <LIN_QTY>001</LIN_QTY>
+                <REF_CUST_ITEM_FRM>PU5A 622A02 AA</REF_CUST_ITEM_FRM>
+                <REF_LINE_FEED>1234</REF_LINE_FEED>
+            </PART>
+            <PART>
+                <LIN_CUST_ITEM>PU5A 65500 PC</LIN_CUST_ITEM>
+                <LIN_QTY>001</LIN_QTY>
+                <REF_CUST_ITEM_FRM>PU5A 65500 PC</REF_CUST_ITEM_FRM>
+                <REF_LINE_FEED>1234</REF_LINE_FEED>
+            </PART>
+            <PART>
+                <LIN_CUST_ITEM>UKB5T 14711 AA3JA6</LIN_CUST_ITEM>
+                <LIN_QTY>001</LIN_QTY>
+                <REF_CUST_ITEM_FRM>UKB5T 14711 AA3JA6</REF_CUST_ITEM_FRM>
+                <REF_LINE_FEED>1234</REF_LINE_FEED>
+            </PART>
+            <PART>
+                <LIN_CUST_ITEM>UKB5T 14B709 CA3JA6</LIN_CUST_ITEM>
+                <LIN_QTY>001</LIN_QTY>
+                <REF_CUST_ITEM_FRM>UKB5T 14B709 CA3JA6</REF_CUST_ITEM_FRM>
+                <REF_LINE_FEED>1234</REF_LINE_FEED>
+            </PART>
+        </PARTS>
+    </CUST_ORDER>
