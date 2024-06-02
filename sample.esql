@@ -1,0 +1,89 @@
+CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		CALL CopyMessageHeaders();
+		DECLARE CH_TIMEStamp CHARACTER;
+		--Adding code as per CR452
+		DECLARE CH_INC CHARACTER ;
+		DECLARE DT_CURRENTDATE DATE;
+		-- Start of code commented by Anjaiah as per the PCA 152173
+	    --  SET Environment.Variable.P0003_cnt = 0;
+		-- End of code commented by Anjaiah as per the PCA 152173
+		SET Environment.Variable.P0015_cnt = 0;
+		SET Environment.Variable.P2010_cnt = 0;
+		SET Environment.Variable.PSREF_cnt = 0;
+		SET Environment.Variable.INORD_cnt = 0;
+		SET Environment.Variable.P9802_cnt = 0;--Made changes as part of PCA 151155 to send new P9802 info type record on 11th Jan, 2018
+		
+		--Added the environment variable for P0267 for the PCA 127739 by Poojitha on 4th september 2015.
+		SET Environment.Variable.P0267_cnt =0;
+		--End of change for PCA 127739.
+		--PCA 101463 Start - Prasad Vadnala
+		SET Environment.Variables.TriggerFrequency = COALESCE(InputRoot.XMLNSC.Trigger.TriggerFrequency,'');
+		--PCA 101463 End - Prasad Vadnala
+		SET Environment.variable.INTERFACE_RUN_ID = THE(SELECT A.INTERFACE_RUNID from Database.Stage.PAY_OUTPUT_FILE_ST AS A where A.RECORD_STATUS = 'R');
+        --Change as per defect 1543,Modified by Bhargavi Pusuluri,Modified Date :sep25th,2013
+        --SET Environment.variable.COUNTRYCODE = THE(SELECT A.COUNTRY_CODE from Database.Stage.PAY_OUTPUT_FILE_ST AS A where A.INTERFACE_RUNID = Environment.variable.INTERFACE_RUN_ID);
+        SET Environment.variable.COUNTRYCODE = THE(SELECT A.COUNTRY_CODE from Database.Stage.PAY_OUTPUT_FILE_ST AS A where A.INTERFACE_RUNID = Environment.variable.INTERFACE_RUN_ID.INTERFACE_RUNID);
+		--End of Code Change as per CR452
+		SET CH_TIMEStamp = CAST (CURRENT_TIMESTAMP AS CHARACTER FORMAT 'yyyyMMddkkmmss');
+		SET Environment.Temp.TS = CH_TIMEStamp;
+		--Start of code added by Arghya as per the PCA 109554 on 12th August 2014
+		SET Environment.variable.Timestamp = CAST(CURRENT_GMTTIMESTAMP AS CHARACTER FORMAT 'yyyy-MM-dd''T''HH:mm:ss.SZZZ');
+		--End of code added by Arghya as per the PCA 109554 on 12th August 2014
+		--Adding code as per CR452		
+		IF(DT_I5606_Previousdate IS NULL) THEN		
+		  SET DT_I5606_Previousdate = cast(CURRENT_DATE AS DATE FORMAT 'yyyyMMdd');		
+	    END IF;	    
+		SET DT_CURRENTDATE    = cast(CURRENT_DATE AS DATE FORMAT 'yyyyMMdd');		
+		IF(DT_I5606_Previousdate    = DT_CURRENTDATE)THEN		
+		   SET IN_I5606_RunCnt = IN_I5606_RunCnt+1;		
+		   IF(LENGTH(CAST(IN_I5606_RunCnt AS CHARACTER)) =1) THEN		
+		      SET CH_INC = '0'||CAST(IN_I5606_RunCnt AS CHARACTER);	
+		      IF COALESCE(Environment.variable.COUNTRYCODE.COUNTRY_CODE,'') = 'GBR' THEN
+		      	--PCA 101463 Start - Prasad Vadnala. Added Environemnt.Variables.TriggerFrequency EV
+		      SET Environment.Temp.TgtSTPFilename = CH_TgtSTPFilename||'_'||CH_TIMEStamp||'_GBODSP_HRMD'||CH_INC||'_' || Environment.Variables.TriggerFrequency || 'UT8G2I.SAP.pgp';
+		      ELSE
+		      	SET Environment.Temp.TgtSTPFilename = CH_TgtSTPFilename||'_'||CH_TIMEStamp||'_USADIE_HRMD'||CH_INC||'_' || Environment.Variables.TriggerFrequency || 'UT8G2I.SAP.pgp';
+		      END IF;
+		      	
+           ELSE
+              SET CH_INC = CAST(IN_I5606_RunCnt AS CHARACTER);
+              IF COALESCE(Environment.variable.COUNTRYCODE.COUNTRY_CODE,'') = 'GBR' THEN
+		      SET Environment.Temp.TgtSTPFilename = CH_TgtSTPFilename||'_'||CH_TIMEStamp||'_GBODSP_HRMD'||CH_INC||'_' || Environment.Variables.TriggerFrequency || 'UT8G2I.SAP.pgp';
+		      ELSE
+		      	SET Environment.Temp.TgtSTPFilename = CH_TgtSTPFilename||'_'||CH_TIMEStamp||'_USADIE_HRMD'||CH_INC||'_' || Environment.Variables.TriggerFrequency || 'UT8G2I.SAP.pgp';
+		      END IF;
+           END IF;
+        ELSE
+       	   SET DT_I5606_Previousdate = DT_CURRENTDATE;
+       	   SET IN_I5606_RunCnt = 1;
+       	   SET CH_INC = '0'||CAST(IN_I5606_RunCnt AS CHARACTER);
+       	   IF COALESCE(Environment.variable.COUNTRYCODE.COUNTRY_CODE,'') = 'GBR' THEN
+		      SET Environment.Temp.TgtSTPFilename = CH_TgtSTPFilename||'_'||CH_TIMEStamp||'_GBODSP_HRMD'||CH_INC||'_' || Environment.Variables.TriggerFrequency || 'UT8G2I.SAP.pgp';
+		      ELSE
+		      	SET Environment.Temp.TgtSTPFilename = CH_TgtSTPFilename||'_'||CH_TIMEStamp||'_USADIE_HRMD'||CH_INC||'_' || Environment.Variables.TriggerFrequency || 'UT8G2I.SAP.pgp';
+		      END IF;
+			--PCA 101463 End - Prasad Vadnala. Added Environemnt.Variables.TriggerFrequency EV
+        END IF; 		
+		--End of Code Change as per CR452
+		SET CH_TIMEStamp = CAST (CURRENT_TIMESTAMP AS CHARACTER FORMAT 'yyyyMMddkkmmss');
+		SET Environment.Temp.TS = CH_TIMEStamp;
+		SET Environment.Temp.TempFileName = 'I5606_ADP_temp'||CH_TIMEStamp||'.txt';
+		
+		--Start of code coommented by Arghya as per the PCA 109554 on 12th August 2014 
+		--CALL PROC_CreateTMS();
+		--End of code coommented by Arghya as per the PCA 109554 on 12th August 2014 
+		CALL CopyMessageHeaders();
+		CALL PROC_HeaderRecords();
+		CALL CopyMessageHeaders();
+		CALL PROC_DataRecords();
+		CALL CopyMessageHeaders();
+		CALL PROC_Trailerecords();
+		SET OutputLocalEnvironment.Destination.File.Name = Environment.Temp.TempFileName;
+		PROPAGATE TO TERMINAL 'out3';
+		UPDATE Database.Stage.PAY_OUTPUT_FILE_ST AS A SET RECORD_STATUS = 'P' WHERE A.INTERFACE_RUNID = Environment.variable.INTERFACE_RUN_ID.INTERFACE_RUNID AND A.RECORD_STATUS = 'R' ;
+		--Clearing the environment of ChunkedRecords		
+		DELETE FIELD Environment.Variable.ChunkRecords1.NextRecords;
+        DELETE FIELD Environment.variable.nextrecord;
+		RETURN TRUE;
+	END;
